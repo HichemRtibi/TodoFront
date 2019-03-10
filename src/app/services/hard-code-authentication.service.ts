@@ -23,6 +23,8 @@ export class HardCodeAuthenticationService {
     return !(user === null)
   }
 
-
+logout(){
+    sessionStorage.removeIte('authenticaterUser');
+}
 
 }
