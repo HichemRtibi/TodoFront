@@ -1,0 +1,22 @@
+<div>
+  <small>List Todos</small>
+  <table border="1">
+    <thead>
+    <tr>
+
+      <th>Description</th>
+      <th>TargetDate</th>
+      <th>Completed ?</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let todo of todos">
+      <td>{{todo.description}}</td>
+      <td>{{todo.targetDate |date |lowercase}}</td>
+      <td>{{todo.done}}</td>
+    </tr>
+
+    </tbody>
+  </table>
+</div>
