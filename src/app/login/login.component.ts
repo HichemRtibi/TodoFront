@@ -7,8 +7,8 @@ import {Router} from "@angular/router";
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  username='in28minutes';
-  password:string='in28minutes'
+  username='hichem';
+  password:string='rtibi'
   IvalidLogin=false;
 
   ErrorMessage='Invalid Username and Password';
