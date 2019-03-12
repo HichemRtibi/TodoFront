@@ -11,7 +11,7 @@ import {WelcomeDataService} from "../services/data/welcome-data.service";
 export class WelcomeComponent implements OnInit {
   name = '';
 
-  constructor(private router: ActivatedRoute,private welcomedataservice:WelcomeDataService) {
+  constructor(private router: ActivatedRoute, private welcomedataservice: WelcomeDataService) {
   }
 
   ngOnInit() {
@@ -19,7 +19,7 @@ export class WelcomeComponent implements OnInit {
   }
 
   getWelcomeMessage() {
-    this.welcomedataservice.excuteHelloWorldBeanMessage();
+    this.welcomedataservice.excuteHelloWorldBeanMessage().subscribe();
 
 
   }
